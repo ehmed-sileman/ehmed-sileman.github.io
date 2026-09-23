@@ -52,6 +52,36 @@
   }
   </script>
 
+  .architecture {
+  margin-top: 30px;
+  max-width: 720px;
+}
+
+.arch-box {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-left: 4px solid #8b5cf6;
+  border-radius: 10px;
+  padding: 18px 22px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.arch-box small {
+  display: block;
+  margin-top: 6px;
+  color: #8b949e;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.arch-arrow {
+  text-align: center;
+  font-size: 25px;
+  color: #8b949e;
+  padding: 7px 0;
+}
+
   <style>
     * {
       box-sizing: border-box;
@@ -209,6 +239,56 @@
   </p>
 
   <h2>System Architecture</h2>
+  <div class="architecture">
+
+  <div class="arch-box">
+    Leaf Image
+    <small>Plant leaf captured or uploaded by the user</small>
+  </div>
+
+  <div class="arch-arrow">↓</div>
+
+  <div class="arch-box">
+    Plant Type Verification
+    <small>First classifier verifies the selected plant type</small>
+  </div>
+
+  <div class="arch-arrow">↓</div>
+
+  <div class="arch-box">
+    Plant-Specific Disease Classifier
+    <small>Second classifier analyzes diseases related to the verified plant</small>
+  </div>
+
+  <div class="arch-arrow">↓</div>
+
+  <div class="arch-box">
+    Disease Diagnosis
+    <small>Probable plant disease is identified</small>
+  </div>
+
+  <div class="arch-arrow">↓</div>
+
+  <div class="arch-box">
+    Treatment & Prevention
+    <small>Treatment, active substances and preventive guidance</small>
+  </div>
+
+  <div class="arch-arrow">↓</div>
+
+  <div class="arch-box">
+    Fuzzy Logic
+    <small>Treatment follow-up and decision support</small>
+  </div>
+
+  <div class="arch-arrow">↓</div>
+
+  <div class="arch-box">
+    Geographic Disease Analysis
+    <small>Location-based information about diseases in the surrounding area</small>
+  </div>
+
+</div>
 
   <div class="flow">
 
