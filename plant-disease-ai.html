@@ -7,25 +7,38 @@
 
   <title>Plant Disease Detection Using AI & Fuzzy Logic | Ehmed Silêman</title>
 
-  <meta name="description"
-        content="Artificial Intelligence graduation project for plant disease diagnosis from leaf images using dual-stage classification, Computer Vision, geographic disease analysis, and Fuzzy Logic for treatment follow-up.">
+  <meta
+    name="description"
+    content="Artificial Intelligence graduation project for plant disease diagnosis from leaf images using dual-stage classification, Computer Vision, geographic disease analysis, and Fuzzy Logic for treatment follow-up."
+  >
 
   <meta name="robots" content="index, follow">
+  <meta name="author" content="Ehmed Silêman">
 
-  <link rel="canonical"
-        href="https://ehmed-sileman.github.io/plant-disease-ai.html">
+  <link
+    rel="canonical"
+    href="https://ehmed-sileman.github.io/plant-disease-ai.html"
+  >
 
-  <meta property="og:title"
-        content="Plant Disease Detection Using AI & Fuzzy Logic">
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="Plant Disease Detection Using AI & Fuzzy Logic"
+  >
 
-  <meta property="og:description"
-        content="Graduation project combining Artificial Intelligence, Computer Vision, dual-stage plant disease classification, geographic disease analysis, and Fuzzy Logic.">
+  <meta
+    property="og:description"
+    content="Graduation project combining Artificial Intelligence, Computer Vision, dual-stage plant disease classification, geographic disease analysis, and Fuzzy Logic."
+  >
 
-  <meta property="og:url"
-        content="https://ehmed-sileman.github.io/plant-disease-ai.html">
+  <meta
+    property="og:url"
+    content="https://ehmed-sileman.github.io/plant-disease-ai.html"
+  >
 
   <meta property="og:type" content="article">
 
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,6 +57,7 @@
     "about": [
       "Artificial Intelligence",
       "Machine Learning",
+      "Deep Learning",
       "Computer Vision",
       "Plant Disease Detection",
       "Image Classification",
@@ -51,13 +65,6 @@
     ]
   }
   </script>
-
-  .architecture {
-  margin-top: 30px;
-  max-width: 720px;
-}
-
-
 
   <style>
     * {
@@ -95,6 +102,7 @@
     h1 {
       font-size: 44px;
       line-height: 1.35;
+      margin-top: 0;
       margin-bottom: 15px;
     }
 
@@ -126,36 +134,65 @@
       color: #58a6ff;
     }
 
-    .flow {
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 22px;
-      margin-top: 25px;
-      background: #161b22;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .flow-step {
-      margin: 10px 0;
+    /* System Architecture */
+    .architecture {
+      margin-top: 30px;
+      max-width: 720px;
+    }
+
+    .arch-box {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-left: 4px solid #8b5cf6;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 18px;
       font-weight: bold;
     }
 
-    .arrow {
+    .arch-box small {
+      display: block;
+      margin-top: 6px;
       color: #8b949e;
-      margin-left: 10px;
+      font-size: 14px;
+      font-weight: normal;
     }
 
+    .arch-arrow {
+      text-align: center;
+      font-size: 25px;
+      color: #8b949e;
+      padding: 7px 0;
+    }
+
+    /* Technology Tags */
     .tag {
       display: inline-block;
       border: 1px solid #30363d;
       border-radius: 20px;
       padding: 7px 13px;
-      margin: 5px;
+      margin: 5px 5px 5px 0;
+      background: #161b22;
     }
 
     .note {
       border-left: 3px solid #8b5cf6;
       padding-left: 15px;
       color: #a7b0bb;
+    }
+
+    .project-links {
+      margin-top: 20px;
+    }
+
+    .project-links a {
+      display: inline-block;
+      margin-right: 18px;
+      margin-bottom: 10px;
     }
 
     footer {
@@ -166,328 +203,298 @@
       font-size: 14px;
     }
 
-    .arch-box {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-left: 4px solid #8b5cf6;
-  border-radius: 10px;
-  padding: 18px 22px;
-  font-size: 18px;
-  font-weight: bold;
-}
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 34px;
+      }
 
-.arch-box small {
-  display: block;
-  margin-top: 6px;
-  color: #8b949e;
-  font-size: 14px;
-  font-weight: normal;
-}
+      .subtitle {
+        font-size: 18px;
+      }
 
-.arch-arrow {
-  text-align: center;
-  font-size: 25px;
-  color: #8b949e;
-  padding: 7px 0;
-}
+      .container {
+        padding: 30px 18px 60px;
+      }
+
+      nav a {
+        margin-right: 14px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about.html">About</a>
-    <a href="https://github.com/ehmed-sileman">GitHub</a>
-  </nav>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="https://github.com/ehmed-sileman">GitHub</a>
+    </nav>
 
-  <h1>
-    Plant Disease Detection and Treatment Tracking Using AI and Fuzzy Logic
-  </h1>
+    <h1>
+      Plant Disease Detection and Treatment Tracking Using AI and Fuzzy Logic
+    </h1>
 
-  <div class="subtitle">
-    Artificial Intelligence Graduation Project
-  </div>
-
-  <p>
-    This project presents an intelligent system for diagnosing plant diseases
-    by analyzing images of plant leaves.
-  </p>
-
-  <p>
-    The project was developed as part of a graduation project team at the
-    Faculty of Informatics Engineering, Damascus University.
-  </p>
-
-  <p>
-    <strong>Project Contributor:</strong> Ehmed Silêman<br>
-    <strong>Specialization:</strong> Artificial Intelligence
-  </p>
-
-  <h2>Project Overview</h2>
-
-  <p>
-    The system is designed to assist users in identifying plant diseases
-    through leaf-image analysis and to provide treatment recommendations,
-    preventive guidance, and treatment follow-up.
-  </p>
-
-  <p>
-    The project combines Artificial Intelligence, Computer Vision,
-    plant-specific disease classification, geographic information,
-    and Fuzzy Logic.
-  </p>
-
-  <h2>System Architecture</h2>
-  <div class="architecture">
-
-  <div class="arch-box">
-    Leaf Image
-    <small>Plant leaf captured or uploaded by the user</small>
-  </div>
-
-  <div class="arch-arrow">↓</div>
-
-  <div class="arch-box">
-    Plant Type Verification
-    <small>First classifier verifies the selected plant type</small>
-  </div>
-
-  <div class="arch-arrow">↓</div>
-
-  <div class="arch-box">
-    Plant-Specific Disease Classifier
-    <small>Second classifier analyzes diseases related to the verified plant</small>
-  </div>
-
-  <div class="arch-arrow">↓</div>
-
-  <div class="arch-box">
-    Disease Diagnosis
-    <small>Probable plant disease is identified</small>
-  </div>
-
-  <div class="arch-arrow">↓</div>
-
-  <div class="arch-box">
-    Treatment & Prevention
-    <small>Treatment, active substances and preventive guidance</small>
-  </div>
-
-  <div class="arch-arrow">↓</div>
-
-  <div class="arch-box">
-    Fuzzy Logic
-    <small>Treatment follow-up and decision support</small>
-  </div>
-
-  <div class="arch-arrow">↓</div>
-
-  <div class="arch-box">
-    Geographic Disease Analysis
-    <small>Location-based information about diseases in the surrounding area</small>
-  </div>
-
-</div>
-
-  <div class="flow">
-
-    <div class="flow-step">
-      1. Leaf Image + Plant Name + Geographic Location
+    <div class="subtitle">
+      Artificial Intelligence Graduation Project
     </div>
 
-    <div class="arrow">↓</div>
+    <p>
+      This project presents an intelligent system for diagnosing plant diseases
+      by analyzing images of plant leaves.
+    </p>
 
-    <div class="flow-step">
-      2. Plant Type Verification
+    <p>
+      The project was developed as part of a graduation project team at the
+      Faculty of Informatics Engineering, Damascus University.
+    </p>
+
+    <p>
+      <strong>Project Contributor:</strong> Ehmed Silêman<br>
+      <strong>Specialization:</strong> Artificial Intelligence
+    </p>
+
+    <h2>Project Overview</h2>
+
+    <p>
+      The system is designed to assist users in identifying plant diseases
+      through leaf-image analysis and to provide treatment recommendations,
+      preventive guidance, and treatment follow-up.
+    </p>
+
+    <p>
+      The project combines Artificial Intelligence, Computer Vision,
+      plant-specific disease classification, geographic information,
+      and Fuzzy Logic.
+    </p>
+
+    <h2>System Architecture</h2>
+
+    <div class="architecture">
+
+      <div class="arch-box">
+        Leaf Image + Plant Name + Geographic Location
+        <small>
+          The user captures or uploads a plant leaf image and provides
+          plant information and location.
+        </small>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-box">
+        Plant Type Verification
+        <small>
+          The first classifier verifies whether the uploaded leaf belongs
+          to the plant selected by the user.
+        </small>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-box">
+        Plant-Specific Disease Classification
+        <small>
+          The second classifier analyzes diseases associated with the
+          verified plant type.
+        </small>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-box">
+        Disease Diagnosis
+        <small>
+          The system determines the probable plant disease.
+        </small>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-box">
+        Treatment & Prevention
+        <small>
+          Treatment recommendations, active substances, and preventive
+          guidance are presented to the user.
+        </small>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-box">
+        Fuzzy Logic Treatment Follow-up
+        <small>
+          Fuzzy Logic supports treatment follow-up and decision-making.
+        </small>
+      </div>
+
+      <div class="arch-arrow">↓</div>
+
+      <div class="arch-box">
+        Geographic Disease Analysis
+        <small>
+          Location-based information can help identify diseases occurring
+          in the surrounding geographic area.
+        </small>
+      </div>
+
     </div>
 
-    <div class="arrow">↓</div>
+    <h2>Dual-Stage Classification</h2>
 
-    <div class="flow-step">
-      3. Plant-Specific Disease Classification
+    <p>
+      One of the main technical concepts of the project is its
+      two-stage classification approach.
+    </p>
+
+    <h3>Stage 1 — Plant Type Verification</h3>
+
+    <p>
+      The first classifier analyzes the uploaded leaf image and verifies
+      whether it belongs to the plant selected by the user.
+    </p>
+
+    <p>
+      If the plant type does not match, the system can alert the user
+      about a possible input or recognition error.
+    </p>
+
+    <h3>Stage 2 — Disease Classification</h3>
+
+    <p>
+      After confirming the plant type, a second classifier analyzes the
+      image using only disease classes associated with that specific plant.
+    </p>
+
+    <p>
+      This plant-specific classification approach is designed to reduce
+      ambiguity between unrelated diseases and improve diagnostic precision.
+    </p>
+
+    <h2>Artificial Intelligence & Computer Vision</h2>
+
+    <p>
+      The project investigates image-based Artificial Intelligence techniques
+      for detecting visual symptoms of plant diseases.
+    </p>
+
+    <p>
+      The technical design considers Computer Vision and Deep Learning
+      concepts such as:
+    </p>
+
+    <ul>
+      <li>Convolutional Neural Networks (CNN)</li>
+      <li>Transfer Learning</li>
+      <li>Image Classification</li>
+      <li>Feature Extraction</li>
+      <li>Object Detection</li>
+      <li>Semantic Segmentation</li>
+      <li>Softmax Classification</li>
+    </ul>
+
+    <p class="note">
+      The project design also examined lightweight neural-network
+      architectures suitable for mobile-oriented applications.
+    </p>
+
+    <h2>Fuzzy Logic</h2>
+
+    <p>
+      Fuzzy Logic is integrated into the treatment follow-up process.
+    </p>
+
+    <p>
+      Rather than relying only on strict binary rules, the fuzzy system
+      evaluates treatment-related conditions using fuzzy rules and supports
+      treatment follow-up and decision-making.
+    </p>
+
+    <h2>Treatment & Prevention</h2>
+
+    <p>
+      Following disease diagnosis, the system can provide:
+    </p>
+
+    <ul>
+      <li>The probable disease name</li>
+      <li>Suggested treatment</li>
+      <li>Recommended active substances</li>
+      <li>Preventive recommendations</li>
+    </ul>
+
+    <h2>Geographic Disease Analysis</h2>
+
+    <p>
+      The system can use geographic location information to identify plant
+      diseases reported or commonly found in the user's surrounding region.
+    </p>
+
+    <p>
+      This information can support preventive action and improve awareness
+      of disease patterns in different geographic areas.
+    </p>
+
+    <h2>Main Features</h2>
+
+    <ul>
+      <li>Plant leaf image analysis</li>
+      <li>Plant type verification</li>
+      <li>Dual-stage disease classification</li>
+      <li>AI-based plant disease diagnosis</li>
+      <li>Treatment recommendations</li>
+      <li>Preventive guidance</li>
+      <li>Fuzzy Logic treatment follow-up</li>
+      <li>Geographic disease analysis</li>
+    </ul>
+
+    <h2>Technical Fields</h2>
+
+    <div>
+      <span class="tag">Artificial Intelligence</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Deep Learning</span>
+      <span class="tag">Computer Vision</span>
+      <span class="tag">CNN</span>
+      <span class="tag">Image Classification</span>
+      <span class="tag">Fuzzy Logic</span>
+      <span class="tag">Software Engineering</span>
     </div>
 
-    <div class="arrow">↓</div>
+    <h2>Project Repository</h2>
 
-    <div class="flow-step">
-      4. Disease Diagnosis
+    <p>
+      Public project documentation is available on GitHub.
+      The project source code is not publicly published.
+    </p>
+
+    <div class="project-links">
+      <a href="https://github.com/ehmed-sileman/plant-disease-ai-fuzzy-logic">
+        View Project Documentation on GitHub
+      </a>
     </div>
 
-    <div class="arrow">↓</div>
+    <h2>Contributor</h2>
 
-    <div class="flow-step">
-      5. Treatment & Preventive Recommendations
-    </div>
+    <p>
+      <strong>Ehmed Silêman</strong><br>
+      Informatics Engineer — Artificial Intelligence
+    </p>
 
-    <div class="arrow">↓</div>
+    <p>
+      <a href="https://ehmed-sileman.github.io/">
+        Official Website
+      </a>
+    </p>
 
-    <div class="flow-step">
-      6. Fuzzy Logic Treatment Follow-up
-    </div>
-
-    <div class="arrow">↓</div>
-
-    <div class="flow-step">
-      7. Geographic Disease Information
-    </div>
+    <footer>
+      © Ehmed Silêman
+    </footer>
 
   </div>
-
-  <h2>Dual-Stage Classification</h2>
-
-  <p>
-    One of the main technical concepts of the project is its
-    two-stage classification approach.
-  </p>
-
-  <h3>Stage 1 — Plant Type Verification</h3>
-
-  <p>
-    The first classifier analyzes the uploaded leaf image and verifies
-    whether it belongs to the plant selected by the user.
-  </p>
-
-  <p>
-    If the plant type does not match, the system can alert the user
-    about a possible input or recognition error.
-  </p>
-
-  <h3>Stage 2 — Disease Classification</h3>
-
-  <p>
-    After confirming the plant type, a second classifier analyzes the
-    image using only disease classes associated with that specific plant.
-  </p>
-
-  <p>
-    This plant-specific classification approach is designed to reduce
-    ambiguity between unrelated diseases and improve diagnostic precision.
-  </p>
-
-  <h2>Artificial Intelligence & Computer Vision</h2>
-
-  <p>
-    The project investigates image-based Artificial Intelligence techniques
-    for detecting visual symptoms of plant diseases.
-  </p>
-
-  <p>
-    The technical design considers Computer Vision and Deep Learning
-    concepts such as:
-  </p>
-
-  <ul>
-    <li>Convolutional Neural Networks (CNN)</li>
-    <li>Transfer Learning</li>
-    <li>Image Classification</li>
-    <li>Feature Extraction</li>
-    <li>Object Detection</li>
-    <li>Semantic Segmentation</li>
-    <li>Softmax Classification</li>
-  </ul>
-
-  <p class="note">
-    The project design also examined lightweight neural-network
-    architectures suitable for mobile-oriented applications.
-  </p>
-
-  <h2>Fuzzy Logic</h2>
-
-  <p>
-    Fuzzy Logic is integrated into the treatment follow-up process.
-  </p>
-
-  <p>
-    Rather than relying only on strict binary rules, the fuzzy system
-    evaluates treatment-related conditions using fuzzy rules and supports
-    treatment follow-up and decision-making.
-  </p>
-
-  <h2>Treatment & Prevention</h2>
-
-  <p>
-    Following disease diagnosis, the system can provide:
-  </p>
-
-  <ul>
-    <li>The probable disease name</li>
-    <li>Suggested treatment</li>
-    <li>Recommended active substances</li>
-    <li>Preventive recommendations</li>
-  </ul>
-
-  <h2>Geographic Disease Analysis</h2>
-
-  <p>
-    The system can use geographic location information to identify plant
-    diseases reported or commonly found in the user's surrounding region.
-  </p>
-
-  <p>
-    This information can support preventive action and improve awareness
-    of disease patterns in different geographic areas.
-  </p>
-
-  <h2>Main Features</h2>
-
-  <ul>
-    <li>Plant leaf image analysis</li>
-    <li>Plant type verification</li>
-    <li>Dual-stage disease classification</li>
-    <li>AI-based plant disease diagnosis</li>
-    <li>Treatment recommendations</li>
-    <li>Preventive guidance</li>
-    <li>Fuzzy Logic treatment follow-up</li>
-    <li>Geographic disease analysis</li>
-  </ul>
-
-  <h2>Technical Fields</h2>
-
-  <div>
-    <span class="tag">Artificial Intelligence</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Deep Learning</span>
-    <span class="tag">Computer Vision</span>
-    <span class="tag">CNN</span>
-    <span class="tag">Image Classification</span>
-    <span class="tag">Fuzzy Logic</span>
-    <span class="tag">Software Engineering</span>
-  </div>
-
-  <h2>Project Repository</h2>
-
-  <p>
-    Public project documentation is available on GitHub.
-    The project source code is not publicly published.
-  </p>
-
-  <p>
-    <a href="https://github.com/ehmed-sileman/plant-disease-ai-fuzzy-logic">
-      View Project Documentation on GitHub
-    </a>
-  </p>
-
-  <h2>Contributor</h2>
-
-  <p>
-    <strong>Ehmed Silêman</strong><br>
-    Informatics Engineer — Artificial Intelligence
-  </p>
-
-  <p>
-    <a href="https://ehmed-sileman.github.io/">
-      Official Website
-    </a>
-  </p>
-
-  <footer>
-    © Ehmed Silêman
-  </footer>
-
-</div>
 
 </body>
+
 </html>
